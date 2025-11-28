@@ -72,7 +72,7 @@ cd PhishingGuard
 <h3>Install dependencies</h3>
 <pre>pip install -r requirements.txt</pre>
 
-If <code>requirements.txt</code> is missing:
+<code>If requirements.txt</code> is missing:
 <pre>pip install scikit-learn pandas joblib streamlit</pre>
 
 <hr>
@@ -80,7 +80,7 @@ If <code>requirements.txt</code> is missing:
 <h2>🏋️ Train the Model</h2>
 <pre>python train_phishing.py</pre>
 
-This generates:
+ This generates:
 <pre>
 model.joblib
 vectorizer.joblib
@@ -91,7 +91,7 @@ vectorizer.joblib
 <h2>🧪 Run the CLI Classifier</h2>
 <pre>python classify_email.py "Your email text here"</pre>
 
-Example:
+  Example:
 <pre>python classify_email.py "Your account will be locked. Click here to verify."</pre>
 
 <hr>
@@ -99,7 +99,7 @@ Example:
 <h2>🌐 Run Streamlit App</h2>
 <pre>streamlit run app_streamlit.py</pre>
 
-Open in browser:
+ Open in browser:
 <pre>http://localhost:8501</pre>
 
 <hr>
