@@ -1,110 +1,128 @@
-# 🛡️ PhishingGuard – AI-Powered Phishing Email Detector
+<h1 align="center">🛡️ PhishingGuard – AI-Powered Phishing Email Detector</h1>
 
-PhishingGuard is a machine-learning based project that detects whether an email
-is **phishing** or **genuine**.  
-It uses **TF-IDF** for text vectorization and **Logistic Regression** for
-classification.  
-The project includes:
+<p align="center">
+<b>PhishingGuard</b> is a machine-learning based project that detects whether an email is 
+<b>phishing</b> or <b>genuine</b>.  
+<br>
+It uses <b>TF-IDF</b> for text vectorization and <b>Logistic Regression</b> for classification.
+</p>
 
-- A training script  
-- A command-line classifier  
-- A Streamlit web app  
-- A sample phishing dataset
+<hr>
 
-  ## 🚀 Features
+<h2>🚀 Features</h2>
+<ul>
+  <li>Detect phishing emails using machine learning</li>
+  <li>Lightweight & fast model</li>
+  <li>Works on Windows, Linux, and macOS</li>
+  <li>Clean Streamlit UI</li>
+  <li>Classifies emails instantly</li>
+  <li>Easy to extend with more data</li>
+</ul>
 
-- Detect phishing emails with ML  
-- Lightweight & fast model (Logistic Regression)  
-- Works on **Windows**, **Linux**, and **macOS**  
-- Clean Streamlit UI  
-- Classifies emails instantly  
-- Easy to extend with more data
+<h2>📁 Project Structure</h2>
 
-## 📁 Project Structure
-
+<pre>
 PhishingGuard/
 │── dataset/
-│ └── phishing.csv
+│   └── phishing.csv
 │── train_phishing.py
 │── classify_email.py
 │── app_streamlit.py
 │── requirements.txt
 │── README.md
+</pre>
 
-# 🧠 How It Works
+<h2>🧠 How It Works</h2>
 
-### 1️⃣ Preprocessing  
-Emails are cleaned by:
-- Lowercasing  
-- Removing punctuation  
-- Removing stopwords  
-- Tokenizing  
+<h3>1️⃣ Preprocessing</h3>
+<p>Emails are cleaned by:</p>
+<ul>
+  <li>Lowercasing</li>
+  <li>Removing punctuation</li>
+  <li>Removing stopwords</li>
+  <li>Tokenizing</li>
+</ul>
 
-### 2️⃣ Vectorization  
-PhishingGuard uses **TF-IDF Vectorizer** to convert text into numeric form.
+<h3>2️⃣ Vectorization</h3>
+<p>PhishingGuard uses <b>TF-IDF Vectorizer</b> to convert text into numeric form.</p>
 
-### 3️⃣ Model Training  
-A **Logistic Regression** model is trained on the email dataset.
+<h3>3️⃣ Model Training</h3>
+<p>A <b>Logistic Regression</b> model is trained on the dataset.</p>
 
-### 4️⃣ Prediction  
-The trained model predicts:
-- `Phishing`
-- `Genuine`
+<h3>4️⃣ Prediction</h3>
+<p>The trained model predicts:</p>
+<ul>
+  <li><b>Phishing</b></li>
+  <li><b>Genuine</b></li>
+</ul>
 
-### 5️⃣ Streamlit UI  
-The web interface allows users to paste an email and get prediction results instantly.
+<h3>5️⃣ Streamlit UI</h3>
+<p>Paste an email → Get instant prediction through the web interface.</p>
 
----
+<hr>
 
-# ⚙️ Installation (Windows, Linux, macOS)
+<h2>⚙️ Installation (Windows, Linux, macOS)</h2>
 
-### Clone the repository
-
+<h3>Clone the repository</h3>
+<pre>
 git clone https://github.com/shaikallu786/PhishingGuard.git
 cd PhishingGuard
+</pre>
 
-##Install dependencies
+<h3>Install dependencies</h3>
+<pre>pip install -r requirements.txt</pre>
 
-pip install -r requirements.txt
+If <code>requirements.txt</code> is missing:
+<pre>pip install scikit-learn pandas joblib streamlit</pre>
 
-If requirements.txt is missing, install manually:
+<hr>
 
-pip install scikit-learn pandas joblib streamlit
+<h2>🏋️ Train the Model</h2>
+<pre>python train_phishing.py</pre>
 
-##🏋️ Train the Model
-python train_phishing.py
-This will generate:
--->model.joblib
--->vectorizer.joblib
+This generates:
+<pre>
+model.joblib
+vectorizer.joblib
+</pre>
 
-##Run the CLI Classifier
-python classify_email.py "Your email text here"
-Example: python classify_email.py "Your account will be locked. Click here to verify."
+<hr>
 
-##Run Streamlit App
-Windows / Linux / macOS: streamlit run app_streamlit.py
-Open in browser: http://localhost:8501
+<h2>🧪 Run the CLI Classifier</h2>
+<pre>python classify_email.py "Your email text here"</pre>
 
+Example:
+<pre>python classify_email.py "Your account will be locked. Click here to verify."</pre>
 
-##🐧 Linux Setup Example (Ubuntu)
+<hr>
 
-PhishingGuard works perfectly in Linux because:
-->It uses pure Python
-->No OS-specific dependencies
-->Streamlit behaves the same on all platforms
-Commands:
+<h2>🌐 Run Streamlit App</h2>
+<pre>streamlit run app_streamlit.py</pre>
+
+Open in browser:
+<pre>http://localhost:8501</pre>
+
+<hr>
+
+<h2>🐧 Linux Setup Example (Ubuntu)</h2>
+
+<pre>
 sudo apt update
 sudo apt install python3 python3-pip -y
+
 pip install scikit-learn pandas joblib streamlit
+
 git clone https://github.com/shaikallu786/PhishingGuard.git
 cd PhishingGuard
+
 python3 train_phishing.py
 streamlit run app_streamlit.py
+</pre>
 
-##🤝 Contributing
+<hr>
 
-Pull requests are welcome!
-For major changes, please open an issue first to discuss the change
+<h2>🤝 Contributing</h2>
+<p>Pull requests are welcome. For major changes, open an issue first.</p>
 
-##📜 License
-This project is licensed under the MIT License.
+<h2>📜 License</h2>
+<p>This project is licensed under the <b>MIT License</b>.</p>
