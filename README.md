@@ -9,20 +9,16 @@ The project includes:
 - A training script  
 - A command-line classifier  
 - A Streamlit web app  
-- A sample phishing dataset  
+- A sample phishing dataset
 
----
-
-## 🚀 Features
+  ## 🚀 Features
 
 - Detect phishing emails with ML  
 - Lightweight & fast model (Logistic Regression)  
 - Works on **Windows**, **Linux**, and **macOS**  
 - Clean Streamlit UI  
 - Classifies emails instantly  
-- Easy to extend with more data  
-
----
+- Easy to extend with more data
 
 ## 📁 Project Structure
 
@@ -34,11 +30,6 @@ PhishingGuard/
 │── app_streamlit.py
 │── requirements.txt
 │── README.md
-
-yaml
-Copy code
-
----
 
 # 🧠 How It Works
 
@@ -68,58 +59,40 @@ The web interface allows users to paste an email and get prediction results inst
 # ⚙️ Installation (Windows, Linux, macOS)
 
 ### Clone the repository
-```bash
+
 git clone https://github.com/shaikallu786/PhishingGuard.git
 cd PhishingGuard
-Install dependencies
-bash
-Copy code
+
+##Install dependencies
+
 pip install -r requirements.txt
+
 If requirements.txt is missing, install manually:
 
-bash
-Copy code
 pip install scikit-learn pandas joblib streamlit
-🏋️ Train the Model
-bash
-Copy code
+
+##🏋️ Train the Model
 python train_phishing.py
 This will generate:
+-->model.joblib
+-->vectorizer.joblib
 
-Copy code
-model.joblib
-vectorizer.joblib
-🧪 Run the CLI Classifier
-bash
-Copy code
+##Run the CLI Classifier
 python classify_email.py "Your email text here"
-Example:
+Example: python classify_email.py "Your account will be locked. Click here to verify."
 
-bash
-Copy code
-python classify_email.py "Your account will be locked. Click here to verify."
-🌐 Run Streamlit App
-Windows / Linux / macOS:
-bash
-Copy code
-streamlit run app_streamlit.py
-Open in browser:
+##Run Streamlit App
+Windows / Linux / macOS: streamlit run app_streamlit.py
+Open in browser: http://localhost:8501
 
-arduino
-Copy code
-http://localhost:8501
-🐧 Linux Setup Example (Ubuntu)
+
+##🐧 Linux Setup Example (Ubuntu)
+
 PhishingGuard works perfectly in Linux because:
-
-It uses pure Python
-
-No OS-specific dependencies
-
-Streamlit behaves the same on all platforms
-
+->It uses pure Python
+->No OS-specific dependencies
+->Streamlit behaves the same on all platforms
 Commands:
-bash
-Copy code
 sudo apt update
 sudo apt install python3 python3-pip -y
 pip install scikit-learn pandas joblib streamlit
@@ -127,20 +100,11 @@ git clone https://github.com/shaikallu786/PhishingGuard.git
 cd PhishingGuard
 python3 train_phishing.py
 streamlit run app_streamlit.py
-📌 Future Enhancements
-Add deep-learning model (BERT / DistilBERT)
 
-Add email header analysis
+##🤝 Contributing
 
-Add attachment scanning
-
-Deploy on cloud (Streamlit Cloud / Render / HuggingFace)
-
-Expand dataset with more real-world phishing examples
-
-🤝 Contributing
 Pull requests are welcome!
-For major changes, please open an issue first to discuss the change.
+For major changes, please open an issue first to discuss the change
 
-📜 License
+##📜 License
 This project is licensed under the MIT License.
