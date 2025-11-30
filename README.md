@@ -70,9 +70,6 @@ cd PhishingGuard
 </pre>
 
 <h3>Install dependencies</h3>
-<pre>pip install -r requirements.txt</pre>
-
-<code>If requirements.txt</code> is missing:
 <pre>pip install scikit-learn pandas joblib streamlit</pre>
 
 <hr>
